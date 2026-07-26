@@ -79,7 +79,7 @@ export function Footer() {
               </div>
               <div>
                 <p className="font-display font-bold text-white text-sm leading-tight">Jafar Marakkara</p>
-                <p className="font-malayalam text-white/50 text-xs">ജാഫർ മറക്കാര</p>
+                <p className="text-white/50 text-xs">Malappuram, Kerala</p>
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
@@ -170,7 +170,7 @@ export function Footer() {
             &copy; {year} Jafar Marakkara. All rights reserved.
           </p>
           <p className="text-white/30 text-xs">
-            <span className="font-malayalam">ജാഫർ മറക്കാര</span> &mdash; Malappuram, Kerala
+            Jafar Marakkara &mdash; Malappuram, Kerala
           </p>
         </div>
       </div>

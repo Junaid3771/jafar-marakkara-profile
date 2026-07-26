@@ -94,7 +94,6 @@ export default function YouthPage() {
                 className="font-display font-extrabold text-white leading-tight mb-5 text-pretty"
                 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
               >
-                <span className="font-malayalam text-white/70 block text-2xl mb-2">യുവതലമുറ, ഭാവിയുടെ ശക്തി</span>
                 The Youth Are Not the Future — They Are the Present
               </h1>
               <p className="text-white/65 text-lg leading-relaxed max-w-2xl text-pretty">

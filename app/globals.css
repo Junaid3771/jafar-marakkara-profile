@@ -139,7 +139,6 @@
   /* Fonts mapped to Tailwind utilities */
   --font-sans:      var(--font-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-display:   var(--font-manrope), 'Manrope', system-ui, sans-serif;
-  --font-malayalam: var(--font-malayalam-var), 'Noto Sans Malayalam', sans-serif;
 }
 
 /* ─── Base Styles ─────────────────────────────────────────────── */
@@ -188,10 +187,6 @@
 @layer utilities {
   .font-display {
     font-family: var(--font-display);
-  }
-
-  .font-malayalam {
-    font-family: var(--font-malayalam);
   }
 
   /* Gradient backgrounds */
