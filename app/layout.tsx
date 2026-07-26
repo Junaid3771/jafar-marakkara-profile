@@ -1,36 +1,62 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import { Manrope, Plus_Jakarta_Sans, Noto_Sans_Malayalam } from 'next/font/google'
 import './globals.css'
+import { Navbar } from '@/components/layout/Navbar'
+import { Footer } from '@/components/layout/Footer'
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+  display: 'swap',
+})
+
+const jakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-jakarta',
+  display: 'swap',
+})
+
+const notoMalayalam = Noto_Sans_Malayalam({
+  subsets: ['malayalam'],
+  variable: '--font-malayalam-var',
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+})
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  title: 'Jafar Marakkara | ജാഫർ മറക്കാര',
+  description:
+    'Official website of Jafar Marakkara — Youth Icon, Community Leader, and Visionary Businessman from Malappuram, Kerala.',
+  keywords: [
+    'Jafar Marakkara',
+    'ജാഫർ മറക്കാര',
+    'Kerala politician',
+    'Malappuram youth leader',
+    'Kerala youth icon',
+    'Malappuram business',
+    'community development Kerala',
+  ],
+  authors: [{ name: 'Jafar Marakkara' }],
+  openGraph: {
+    title: 'Jafar Marakkara | ജാഫർ മറക്കാര',
+    description:
+      'Youth Icon. Community Leader. Visionary Businessman. A new generation of leadership from Malappuram, Kerala.',
+    type: 'website',
+    locale: 'en_IN',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jafar Marakkara | ജാഫർ മറക്കാര',
+    description: 'Youth Icon. Community Leader. Visionary Businessman from Malappuram, Kerala.',
   },
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#1a7a4c',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
@@ -39,9 +65,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
-        {children}
+    <html
+      lang="en"
+      className={`${manrope.variable} ${jakartaSans.variable} ${notoMalayalam.variable} bg-background`}
+      suppressHydrationWarning
+    >
+      <body className="antialiased font-sans min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
