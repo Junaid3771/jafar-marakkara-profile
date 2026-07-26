@@ -37,7 +37,7 @@ export function VisionTeaser() {
               />
               <div className="relative rounded-3xl overflow-hidden shadow-jm-glow" style={{ aspectRatio: '3/4' }}>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RmkFnNC2ROkAvOVkMwcYXxuWbulLir.png"
+                  src="/images/jafar-community.png"
                   alt="Jafar Marakkara — Community Leader"
                   fill
                   className="object-cover object-center"

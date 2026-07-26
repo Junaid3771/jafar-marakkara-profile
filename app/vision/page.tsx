@@ -121,10 +121,10 @@ export default function VisionPage() {
                   className="w-12 h-12 rounded-full overflow-hidden relative mb-2"
                 >
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6k0QxTi4koIGpnm66eeRJCGECObNts.png"
+                    src="/images/jafar-hero.png"
                     alt="Jafar Marakkara"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                   />
                 </div>
                 <p className="font-display font-bold text-sm" style={{ color: 'var(--jm-charcoal)' }}>Jafar Marakkara</p>

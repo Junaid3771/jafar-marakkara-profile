@@ -178,11 +178,11 @@ export function HeroSection() {
               {/* Photo */}
               <div className="relative rounded-3xl overflow-hidden shadow-jm-glow" style={{ width: 'min(400px, 85vw)', aspectRatio: '4/5' }}>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6k0QxTi4koIGpnm66eeRJCGECObNts.png"
+                  src="/images/jafar-hero.png"
                   alt="Jafar Marakkara — Youth Icon, Community Leader, Malappuram"
                   fill
                   priority
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   sizes="(max-width: 768px) 85vw, 400px"
                 />
                 {/* Green tint overlay to match brand */}

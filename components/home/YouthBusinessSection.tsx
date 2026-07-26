@@ -69,7 +69,7 @@ export function YouthBusinessSection() {
             <SectionReveal direction="left">
               <div className="relative rounded-3xl overflow-hidden shadow-jm-glow" style={{ aspectRatio: '4/5' }}>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DECcXRl72tNSbaQSCfyyNyTShF5Naa.png"
+                  src="/images/jafar-youth.png"
                   alt="Jafar Marakkara at a community event"
                   fill
                   className="object-cover object-center"
