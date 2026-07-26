@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Manrope, Plus_Jakarta_Sans, Noto_Sans_Malayalam } from 'next/font/google'
+import { Manrope, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
@@ -17,20 +17,13 @@ const jakartaSans = Plus_Jakarta_Sans({
   display: 'swap',
 })
 
-const notoMalayalam = Noto_Sans_Malayalam({
-  subsets: ['malayalam'],
-  variable: '--font-malayalam-var',
-  display: 'swap',
-  weight: ['400', '500', '600', '700'],
-})
 
 export const metadata: Metadata = {
-  title: 'Jafar Marakkara | ജാഫർ മറക്കാര',
+  title: 'Jafar Marakkara | Youth Icon & Community Leader',
   description:
     'Official website of Jafar Marakkara — Youth Icon, Community Leader, and Visionary Businessman from Malappuram, Kerala.',
   keywords: [
     'Jafar Marakkara',
-    'ജാഫർ മറക്കാര',
     'Kerala politician',
     'Malappuram youth leader',
     'Kerala youth icon',
@@ -39,7 +32,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Jafar Marakkara' }],
   openGraph: {
-    title: 'Jafar Marakkara | ജാഫർ മറക്കാര',
+    title: 'Jafar Marakkara | Youth Icon & Community Leader',
     description:
       'Youth Icon. Community Leader. Visionary Businessman. A new generation of leadership from Malappuram, Kerala.',
     type: 'website',
@@ -47,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jafar Marakkara | ജാഫർ മറക്കാര',
+    title: 'Jafar Marakkara | Youth Icon & Community Leader',
     description: 'Youth Icon. Community Leader. Visionary Businessman from Malappuram, Kerala.',
   },
 }
@@ -67,7 +60,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${jakartaSans.variable} ${notoMalayalam.variable} bg-background`}
+      className={`${manrope.variable} ${jakartaSans.variable} bg-background`}
       suppressHydrationWarning
     >
       <body className="antialiased font-sans min-h-screen flex flex-col">

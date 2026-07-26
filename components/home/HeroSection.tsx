@@ -67,17 +67,6 @@ export function HeroSection() {
               </span>
             </motion.div>
 
-            {/* Malayalam heading */}
-            <motion.p
-              custom={0.3}
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              className="font-malayalam text-2xl md:text-3xl text-white/70 mb-2 leading-relaxed"
-            >
-              ജാഫർ മറക്കാര
-            </motion.p>
-
             {/* Main heading — staggered words */}
             <motion.h1
               variants={staggerContainer}
@@ -196,7 +185,7 @@ export function HeroSection() {
                     className="glass-card rounded-2xl px-4 py-3"
                   >
                     <p className="font-display font-bold text-white text-sm">Jafar Marakkara</p>
-                    <p className="font-malayalam text-white/70 text-xs">ജാഫർ മറക്കാര · Malappuram</p>
+                    <p className="text-white/70 text-xs">Youth Icon · Malappuram, Kerala</p>
                   </div>
                 </div>
               </div>

@@ -90,7 +90,6 @@ export default function VisionPage() {
                 className="font-display font-extrabold text-white leading-tight mb-5 text-pretty"
                 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
               >
-                <span className="font-malayalam text-white/70 block text-2xl mb-2">നാളെ കരുപ്പടിക്കുന്നത് ഇന്ന്</span>
                 Building Tomorrow, Today
               </h1>
               <p className="text-white/65 text-lg leading-relaxed max-w-2xl text-pretty">
