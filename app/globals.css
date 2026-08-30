@@ -8,94 +8,97 @@
 :root {
   color-scheme: light;
 
-  /* Green palette */
-  --jm-green-deep:   #0a5c36;
-  --jm-green-mid:    #1a7a4c;
-  --jm-green-fresh:  #22c55e;
-  --jm-green-light:  #dcfce7;
-  --jm-green-glow:   rgba(26, 122, 76, 0.15);
+  /* Premium white / warm neutral palette (no green) */
+  --jm-ivory:         #f8f5f1;
+  --jm-cream:         #efe5d7;
+  --jm-sand:          #d9c7b0;
+  --jm-gold:          #d2a872;
+  --jm-gold-deep:     #b9894d;
+  --jm-stone:         #6a5f56;
+  --jm-charcoal:      #1b1b1b;
+  --jm-charcoal-mid:  #403a36;
+  --jm-off-white:     #f8f5f1;
+  --jm-grey-light:    #f1efe9;
+  --jm-grey-mid:      #948b82;
+  --jm-gold-soft:     rgba(210, 168, 114, 0.18);
 
-  /* Gold accent */
-  --jm-gold:         #d4a843;
-  --jm-gold-light:   #fef3c7;
+  /* Legacy aliases for compatibility */
+  --jm-green-deep:    #1b1b1b;
+  --jm-green-mid:     #6a5f56;
+  --jm-green-fresh:   #d2a872;
+  --jm-green-light:   #f8f5f1;
+  --jm-green-glow:    rgba(210, 168, 114, 0.18);
 
-  /* Neutrals */
-  --jm-charcoal:     #1a1a2e;
-  --jm-charcoal-mid: #2d2d4a;
-  --jm-off-white:    #f8fafc;
-  --jm-grey-light:   #f1f5f9;
-  --jm-grey-mid:     #94a3b8;
-
-  /* Override shadcn tokens with brand palette */
-  --background:           #f8fafc;
-  --foreground:           #1a1a2e;
+  /* Override shadcn tokens with premium neutral palette */
+  --background:           #f8f5f1;
+  --foreground:           #1b1b1b;
   --card:                 #ffffff;
-  --card-foreground:      #1a1a2e;
+  --card-foreground:      #1b1b1b;
   --popover:              #ffffff;
-  --popover-foreground:   #1a1a2e;
-  --primary:              #1a7a4c;
+  --popover-foreground:   #1b1b1b;
+  --primary:              #2f2a27;
   --primary-foreground:   #ffffff;
-  --secondary:            #dcfce7;
-  --secondary-foreground: #0a5c36;
-  --muted:                #f1f5f9;
-  --muted-foreground:     #64748b;
-  --accent:               #dcfce7;
-  --accent-foreground:    #0a5c36;
+  --secondary:            #f1efe9;
+  --secondary-foreground: #1b1b1b;
+  --muted:                #f1efe9;
+  --muted-foreground:     #625b56;
+  --accent:               #f1efe9;
+  --accent-foreground:    #1b1b1b;
   --destructive:          oklch(0.577 0.245 27.325);
-  --border:               #e2e8f0;
-  --input:                #e2e8f0;
-  --ring:                 #1a7a4c;
+  --border:               #e7e1d9;
+  --input:                #e7e1d9;
+  --ring:                 #d2a872;
   --radius:               0.625rem;
 
   /* Sidebar */
-  --sidebar:              #0a5c36;
-  --sidebar-foreground:   #f8fafc;
-  --sidebar-primary:      #22c55e;
-  --sidebar-primary-foreground: #0a5c36;
-  --sidebar-accent:       #1a7a4c;
-  --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border:       rgba(255,255,255,0.1);
-  --sidebar-ring:         #22c55e;
+  --sidebar:              #1b1b1b;
+  --sidebar-foreground:   #f8f5f1;
+  --sidebar-primary:      #d2a872;
+  --sidebar-primary-foreground: #1b1b1b;
+  --sidebar-accent:       #403a36;
+  --sidebar-accent-foreground: #f8f5f1;
+  --sidebar-border:       rgba(255,255,255,0.12);
+  --sidebar-ring:         #d2a872;
 }
 
 /* Force light mode always */
 .dark {
   color-scheme: light;
-  --background:           #f8fafc;
-  --foreground:           #1a1a2e;
+  --background:           #f8f5f1;
+  --foreground:           #1b1b1b;
   --card:                 #ffffff;
-  --card-foreground:      #1a1a2e;
-  --primary:              #1a7a4c;
+  --card-foreground:      #1b1b1b;
+  --primary:              #2f2a27;
   --primary-foreground:   #ffffff;
-  --secondary:            #dcfce7;
-  --secondary-foreground: #0a5c36;
-  --muted:                #f1f5f9;
-  --muted-foreground:     #64748b;
-  --accent:               #dcfce7;
-  --accent-foreground:    #0a5c36;
-  --border:               #e2e8f0;
-  --input:                #e2e8f0;
-  --ring:                 #1a7a4c;
+  --secondary:            #f1efe9;
+  --secondary-foreground: #1b1b1b;
+  --muted:                #f1efe9;
+  --muted-foreground:     #625b56;
+  --accent:               #f1efe9;
+  --accent-foreground:    #1b1b1b;
+  --border:               #e7e1d9;
+  --input:                #e7e1d9;
+  --ring:                 #d2a872;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
     color-scheme: light;
-    --background:           #f8fafc;
-    --foreground:           #1a1a2e;
+    --background:           #f8f5f1;
+    --foreground:           #1b1b1b;
     --card:                 #ffffff;
-    --card-foreground:      #1a1a2e;
-    --primary:              #1a7a4c;
+    --card-foreground:      #1b1b1b;
+    --primary:              #2f2a27;
     --primary-foreground:   #ffffff;
-    --secondary:            #dcfce7;
-    --secondary-foreground: #0a5c36;
-    --muted:                #f1f5f9;
-    --muted-foreground:     #64748b;
-    --accent:               #dcfce7;
-    --accent-foreground:    #0a5c36;
-    --border:               #e2e8f0;
-    --input:                #e2e8f0;
-    --ring:                 #1a7a4c;
+    --secondary:            #f1efe9;
+    --secondary-foreground: #1b1b1b;
+    --muted:                #f1efe9;
+    --muted-foreground:     #625b56;
+    --accent:               #f1efe9;
+    --accent-foreground:    #1b1b1b;
+    --border:               #e7e1d9;
+    --input:                #e7e1d9;
+    --ring:                 #d2a872;
   }
 }
 
@@ -164,7 +167,7 @@
 
   ::selection {
     background: var(--jm-green-fresh);
-    color: white;
+    color: #ffffff;
   }
 
   ::-webkit-scrollbar {
@@ -191,11 +194,11 @@
 
   /* Gradient backgrounds */
   .bg-jm-hero {
-    background: linear-gradient(135deg, var(--jm-charcoal) 0%, var(--jm-green-deep) 50%, var(--jm-charcoal-mid) 100%);
+    background: linear-gradient(135deg, #2f2a27 0%, #4a403b 38%, #6f625b 100%);
   }
 
   .bg-jm-section {
-    background: linear-gradient(180deg, var(--jm-off-white) 0%, var(--jm-green-light) 100%);
+    background: linear-gradient(180deg, var(--jm-off-white) 0%, #efe5d7 100%);
   }
 
   /* Gold accent line */
