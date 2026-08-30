@@ -28,8 +28,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 XX XXXX XXXX',
-    href: 'tel:+91XXXXXXXXXX',
+    value: '+91 95396 93771',
+    href: 'tel:+919539693771',
   },
   {
     icon: Mail,
